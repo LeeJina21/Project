@@ -9,18 +9,15 @@ def solution(answers):
     results = {1:0, 2:0, 3:0} # Map 구조로 학생:맞춘 정답수 로 저장
 
     for i in range(len(answers)):
-        #학생1의 찍기 답은 5개씩 반복, %5 연산 사용
-        if student1[i % 5] == answers[i]:
+        if student1[i % len(student1)] == answers[i]: #len(student1) 배열 크기 5
             # 맞추면 정답 수 +1 하기
             results[1] += 1
 
-        #학생2의 찍기 답은 8개씩 반복, %8 연산 사용
-        if student2[i % 8] == answers[i]:
+        if student2[i % len(student2)] == answers[i]:
             # 맞추면 정답 수 +1 하기
             results[2] += 1
 
-        #학생3의 찍기 답은 10개씩 반복, %10 연산 사용
-        if student3[i % 10] == answers[i]:
+        if student3[i % len(student3)] == answers[i]:
             # 맞추면 정답 수 +1 하기
             results[3] += 1
 
