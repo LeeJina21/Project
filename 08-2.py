@@ -21,3 +21,4 @@ print(numberCheck(10))
 # 값의 크기가 커질수록연산의 범위가 증가됨
 # 238번 반복 달성
 print(numberCheck(1111111))
+

@@ -38,3 +38,4 @@ def solution(numbers):
     # set 구조의 숫자 계산
     return len(answer)
 
+

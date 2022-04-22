@@ -19,3 +19,4 @@ for i in su:
                     print("i : ",i, " / j : ", j)
                     # 삭제하기
                     su.remove(j)
+
